@@ -23,8 +23,8 @@ namespace A5.Untitled
 
 		public override string setContact()
         {
-			return name;
-        }
+			throw new NotImplementedException();
+		}
 
         public Faculty(string name) : base(name)
 		{
