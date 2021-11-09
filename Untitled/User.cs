@@ -1,35 +1,25 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace A5.Untitled
 {
-	public class User
-	{
-		int ID { get; set; }
-		string Name { get; set; }
+    abstract public class User
+    {
+        int ID { get; set; }
+        string Name { get; set; }
 
-		public User(string name)
+        string Contact { get; set; }
+
+        public User(string name)
         {
-			this.Name = name;
+            this.Name = name;
         }
 
-		public User (int id)
+        public User(int id)
         {
-			this.ID = id;
+            this.ID = id;
         }
 
 
-		public string setContact()
-		{
-			throw new NotImplementedException();
-		}
+        public abstract string setContact();
 
-		private string setName()
-		{
-			throw new NotImplementedException();
-		}
-	}
+        public abstract string setName();
+    }
 }

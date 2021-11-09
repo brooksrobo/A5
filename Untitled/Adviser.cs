@@ -18,5 +18,15 @@ namespace A5.Untitled
 		{
 			throw new NotImplementedException();
 		}
-	}
+
+        public override string setContact()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string setName()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

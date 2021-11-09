@@ -8,18 +8,38 @@ namespace A5.Untitled
 {
 	public class Faculty : User
 	{
-		int roomNumber { get; set; }
+        private static int ID;
+
+        int roomNumber { get; set; }
 
 		string name { get; set; }
+
+
+		public Faculty(int roomNumber, string name): base (ID)
+		{
+			this.roomNumber = roomNumber;
+			this.name = name;
+		}
+
+		public override string setContact()
+        {
+			return name;
+        }
 
         public Faculty(string name) : base(name)
 		{
 			this.name = name;
 		}
 
-		public string getOfficehours()
+
+        public string getOfficehours()
 		{
 			throw new NotImplementedException();
 		}
-	}
+
+        public override string setName()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
